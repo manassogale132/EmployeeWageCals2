@@ -1,12 +1,17 @@
+
 #! /bin/bash
 
 echo "Welcome To Employee Wage Computation"
 
-attendance=$((RANDOM%2))
+attend=$((RANDOM%2))
+fwage=160
+nowage=0
 
-if (( $attendance == 1 ))
+if (( $attend == 0 ))
 then
-echo "Employee is Present"
+echo "Day:" "Wage"
+echo "Day 1  "  $fwage
 else
-echo "Employee is Absent"
+echo "Day:" "Wage"
+echo "Day 1  "  $nowage
 fi
