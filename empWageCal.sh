@@ -1,17 +1,21 @@
 
-#! /bin/bash
-
+#!/bin/bash
 echo "Welcome To Employee Wage Computation"
 
-attend=$((RANDOM%2))
+attend=$((RANDOM%3))
 fwage=160
+hwage=80
 nowage=0
 
-if (( $attend == 0 ))
+if (( $attend == 1 ))
 then
-echo "Day:" "Wage"
+echo "Day No:" "Wage"
 echo "Day 1  "  $fwage
+elif (( $attend == 2 ))
+then
+echo "Day No:" "Wage"
+echo "Day 1  "  $hwage
 else
-echo "Day:" "Wage"
-echo "Day 1  "  $nowage
+echo "Day No:" "Wage"
+echo "Day 1  "  $nwage
 fi
