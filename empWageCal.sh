@@ -7,15 +7,17 @@ fwage=160
 hwage=80
 nowage=0
 
-if (( $attend == 1 ))
-then
+case "$attend" in
+1)
 echo "Day No:" "Wage"
 echo "Day 1  "  $fwage
-elif (( $attend == 2 ))
-then
+;;
+2)
 echo "Day No:" "Wage"
 echo "Day 1  "  $hwage
-else
+;;
+*)
 echo "Day No:" "Wage"
-echo "Day 1  "  $nwage
-fi
+echo "Day 1  "  $nowage
+;;
+esac
