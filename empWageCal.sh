@@ -8,7 +8,7 @@ hwage=80
 nowage=0
 
 echo "Day No     Wage     Total Wage"
-for ((i=1; i<=10; i++))
+for ((i=1; i<=5; i++))
 do
 attend=$((RANDOM%3))
 case "$attend" in
