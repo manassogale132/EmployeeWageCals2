@@ -14,7 +14,7 @@ attend=$((RANDOM%3))
 case "$attend" in
 1)
 sum=$(( $sum + $fwage ))
-echo "Day $d      "$fwage"     "$sum
+echo "Day $d      "$fwage"    "$sum
 ;;
 2)
 sum=$(( $sum + $hwage ))
