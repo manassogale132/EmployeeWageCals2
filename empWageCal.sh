@@ -2,22 +2,27 @@
 #!/bin/bash
 echo "Welcome To Employee Wage Computation"
 
-attend=$((RANDOM%3))
+sum=0
 fwage=160
 hwage=80
 nowage=0
 
+echo "Day No     Wage     Total Wage"
+for ((i=1; i<=20; i++))
+do
+attend=$((RANDOM%3))
 case "$attend" in
 1)
-echo "Day No:" "Wage"
-echo "Day 1  "  $fwage
+sum=$(( $sum + $fwage ))
+echo "Day $d      "$fwage"     "$sum
 ;;
 2)
-echo "Day No:" "Wage"
-echo "Day 1  "  $hwage
+sum=$(( $sum + $hwage ))
+echo "Day $d     "$hwage"     "$sum
 ;;
 *)
-echo "Day No:" "Wage"
-echo "Day 1  "  $nowage
+sum=$(( $sum + $hwage ))
+echo "Day $d      "$nowage"      "$sum
 ;;
 esac
+done
